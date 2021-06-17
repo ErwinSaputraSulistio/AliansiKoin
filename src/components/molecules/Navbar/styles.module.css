@@ -1,0 +1,32 @@
+.navbarReusable { 
+   position: sticky; 
+   top: 0;
+}
+
+/* DESKTOP */
+@media(min-width: 768px) {
+   .navbarReusable { 
+      background: white;
+      border-radius: 0 0 1.5vw 1.5vw;
+      box-shadow: 0px 0 0.55vw #D7D7D7;
+      justify-content: space-between;
+      padding: 1.5vw 6vw; 
+   }
+   .navLogo { width: 11%; }
+   .navBtn { margin-left: 1vw; width: 8.8vw; }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+   .navbarReusable { 
+      align-items: center;
+      background: white;
+      border-radius: 0 0 1.5vw 1.5vw;
+      box-shadow: 0px 0 0.55vw #D7D7D7;
+      justify-content: space-between;
+      padding: 6vw; 
+   }
+   .navLogo { height: 66%; width: 33%; }
+   .navBtn { margin-left: 2.5vw; width: 25vw; }
+   .welcomeUser { display: none; }
+}

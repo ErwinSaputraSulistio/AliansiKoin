@@ -1,0 +1,42 @@
+/* DESKTOP */
+@media(min-width: 768px) {
+   .registerOrganism {
+      height: 85%;
+      justify-content: space-between;
+      padding: 2.5vw;
+   }
+   .registerGap {
+      margin-top: 1.5vw;
+   }
+   .registerInput {
+      border: 0.1vw solid grey;
+      border-radius: 0.5vw;
+      margin-top: 0.5vw;
+      padding: 0.5vw;
+    }
+   .registerLabel {
+      color: grey;
+      font-size: 0.77vw;
+   }
+   .registerBtn {
+      bottom: 0;
+      width: 100%;
+   }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+   .registerOrganism { padding: 5vw; }
+   .registerGap { margin-top: 7.5vw; }
+   .registerInput {
+      border: 0.1vw solid grey;
+      border-radius: 2.5vw;
+      margin-top: 1vw;
+      padding: 2.5vw;
+    }
+   .registerLabel {
+      color: grey;
+      font-size: 4vw;
+   }
+   .registerBtn { margin-top: 15vw; width: 100%; }
+}

@@ -1,0 +1,51 @@
+/* DESKTOP */
+@media(min-width: 768px) {
+   .loginRegisterSwitchBorder {
+      border: 0.1vw solid #3CB371;
+      border-radius: 1vw;
+      justify-content: space-evenly;
+      width: 15vw;
+   }
+   .loginRegisterSwitchAnimation { 
+      background: #3CB371;
+      padding: 1.3vw;
+      position: absolute;
+      transition-duration: 0.5s;
+      width: 5vw;
+   }
+   .loginRegisterSwitchAnimation[auth="Login"] {
+      border-radius: 1vw 0 0 1vw;
+      margin-left: -7.7vw;
+   }
+   .loginRegisterSwitchAnimation[auth="Register"] {
+      border-radius: 0 1vw 1vw 0;
+      margin-right: -7.7vw;
+   }
+   .loginBtn, .registerBtn { width: 50%; z-index: 1; }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+   .loginRegisterSwitchBorder {
+      border: 0.1vw solid #3CB371;
+      border-radius: 5vw;
+      justify-content: space-evenly;
+      width: 100%;
+   }
+   .loginRegisterSwitchAnimation { 
+      background: #3CB371;
+      padding: 6.3vw;
+      position: absolute;
+      transition-duration: 0.5s;
+      width: 25%;
+   }
+   .loginRegisterSwitchAnimation[auth="Login"] {
+      border-radius: 5vw 0 0 5vw;
+      margin-left: -41vw;
+   }
+   .loginRegisterSwitchAnimation[auth="Register"] {
+      border-radius: 0 5vw 5vw 0;
+      margin-right: -41vw;
+   }
+   .loginBtn, .registerBtn { width: 50%; z-index: 1; }
+}

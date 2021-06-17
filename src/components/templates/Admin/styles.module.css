@@ -1,0 +1,40 @@
+table {
+   font-family: arial, sans-serif;
+   border-collapse: collapse;
+ }
+ 
+ td, th {
+   border: 1px solid #dddddd;
+   padding: 8px;
+ }
+
+ td, th, tr {
+    text-align: center;
+ }
+ 
+ tr:nth-child(even) {
+   background-color: #dddddd;
+ }
+
+/* DESKTOP */
+@media(min-width: 768px) {
+   .adminPage { padding: 5.5vw; }
+   table { margin: 2.5vw 0; width: 50%; }
+   .adminBtn {
+      margin: 1.1vw 0;
+   }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+   .adminPage { padding: 7.7vw; }
+   .adminUserId {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+   }
+   table { margin: 7.7vw 0; }
+   tr, th, td { width: 33vw; }
+   .adminBtn { margin: 3.3vw 0; }
+}

@@ -1,0 +1,33 @@
+.notFoundTemplate {
+   align-items: center;
+   height: 100vh;
+   justify-content: center;
+}
+
+/* DESKTOP */
+@media(min-width: 768px) {
+   .notFoundImg { width: 33%; }
+   .notFoundBtnArea { 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 25%; 
+   }
+   .notFoundBtn { width: 10vw; }
+   .notFoundBtn:hover { width: 50%; }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+   .notFoundTemplate { padding: 0 5vw; }
+   .notFoundImg { width: 77%; }
+   .notFoundBtnArea {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 15vh;
+      justify-content: space-between;
+      width: 100%;
+   }
+   .notFoundBtn { width: 77%; }
+}

@@ -1,0 +1,50 @@
+/* Ciwin Framework */
+
+/* BASE CSS STYLINGS */
+   /* ANIMATIONS */
+   .hoverThis { transition-duration: 0.5s; }
+   .hoverThis:hover { cursor: pointer; opacity: 0.5; }
+   .showInAnimation {animation: showOpacity 0.5s;}
+   .slideLeft { animation: slideLeft 1.5s; }
+   .slideRight { animation: slideRight 1.5s; }
+   @keyframes showOpacity{from{opacity: 0;} to{opacity: 1;}}
+   @keyframes slideLeft{from{margin-left: -10vw; opacity: 0;} to{margin-left: 0; opacity: 1;}}
+   @keyframes slideRight{from{margin-right: -10vw; opacity: 0;} to{margin-right: 0; opacity: 1;}}
+   /* FONTS */
+   @import url("https://fonts.googleapis.com/css?family=Rubik");
+   .rubikFont {font-family: 'Rubik'}
+   @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+   .poppinsFont {font-family: 'Poppins'}
+   /* POSITIONINGS */
+   .displayColumn, .displayRow { display: flex; }
+   .displayColumn { flex-direction: column; }
+   .displayRow { flex-direction: row; }
+   /* TEXTS */
+   .centerText { text-align: center; }
+   .defaultBigText { font-weight: bold; }
+
+/* RESPONSIVES */
+   /* DESKTOP */
+   @media(min-width: 768px) {
+      /* REUSABLES */
+      .defaultBtn { 
+         border-radius: 0.5vw;
+         padding: 0.5vw 1vw;
+      }
+      /* TEXTS */
+      .defaultBigText { font-size: 3vw; }
+      .defaultMediumText { font-size: 2vw; }
+      .defaultSmallText { font-size: 1vw; }
+   }
+   /* MOBILE */
+   @media(max-width: 768px) {
+      /* REUSABLES */
+      .defaultBtn {
+         border-radius: 2.5vw;
+         padding: 2.5vw;
+      }
+      /* TEXTS */
+      .defaultBigText { font-size: 15vw; }
+      .defaultMediumText { font-size: 10vw; }
+      .defaultSmallText { font-size: 5vw; }
+   }

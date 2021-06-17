@@ -1,0 +1,68 @@
+.homeTemplate[state="nol"] {
+   background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url("https://static.vecteezy.com/system/resources/previews/001/846/151/non_2x/cryptocurrency-stock-chart-light-futuristic-banner-background-free-vector.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.homeTemplate[state="a1"] {
+   background: linear-gradient( rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66) ), url("https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2020/01/inflation-1579407065.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.homeTemplate[state="b2"] {
+   background: linear-gradient( rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66) ), url("https://previews.123rf.com/images/peshkov/peshkov1801/peshkov180100028/93111774-futuristic-bitcoin-wallpaper-cryptocurrency-e-business-and-e-commerce-concept-3d-rendering.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.homeTemplate[state="c3"] {
+   background: linear-gradient( rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66) ), url("https://cdnaz.cekaja.com/media/2017/01/BLOG1-589002bf2941a-e1494916330190.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.homeHeader { align-items: center; justify-content: space-between; }
+.homeHeaderText { color: white; }
+.homeCarouselArea { align-items: center; }
+.homeCarouselInside { align-items: center; justify-content: center; }
+
+/* DESKTOP */
+@media(min-width: 768px) {
+   .homeTemplate { height: 100vh; }
+   .homeHeader { 
+      display: flex;
+      flex-direction: row;
+      height: 88%; 
+      padding: 3vw 6vw; 
+   }
+   .homeCarouselArea { 
+      background: white; 
+      border-radius: 5.5vw 0 5.5vw 0; 
+      height: fit-content;
+      padding: 1.5vw; 
+      transition-duration: 0.5s;
+      width: 33vw;
+   }
+   .homeCarouselArea:hover { border-radius: 0 5.5vw 0 5.5vw; }
+   .homeCarouselInside { height: 77%; }
+   .homeCarouselNewsImg { width: 15vw; }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+   .homeHeader { 
+      height: auto;
+      padding: 8.8vw; 
+   }
+   .homeHeaderTextBottom {
+      margin: 8.8vw 0;
+   }
+   .homeCarouselArea { 
+      background: white; 
+      border-radius: 5.5vw 0 5.5vw 0; 
+      height: fit-content;
+      padding: 5.5vw; 
+      text-align: center;
+      transition-duration: 0.5s;
+   }
+   .homeCarouselArea:hover { border-radius: 0 5.5vw 0 5.5vw; }
+   .homeCarouselInside { height: 77%; }
+   .homeCarouselNewsImg { width: 33vw; }
+}

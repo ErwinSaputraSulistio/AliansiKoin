@@ -1,0 +1,37 @@
+/* DESKTOP */
+@media(min-width: 768px) {
+   .loginOrganism {
+      height: 85%;
+      justify-content: space-between;
+      padding: 2.5vw;
+   }
+   .loginGap { margin-top: 1.5vw; }
+   .loginInput {
+      border: 0.1vw solid grey;
+      border-radius: 0.5vw;
+      margin-top: 0.5vw;
+      padding: 0.5vw;
+    }
+   .loginLabel {
+      color: grey;
+      font-size: 0.77vw;
+   }
+   .loginBtn { width: 100%; }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+   .loginOrganism { padding: 5vw; }
+   .loginGap { margin-top: 7.5vw; }
+   .loginInput {
+      border: 0.1vw solid grey;
+      border-radius: 2.5vw;
+      margin-top: 1vw;
+      padding: 2.5vw;
+    }
+   .loginLabel {
+      color: grey;
+      font-size: 4vw;
+   }
+   .loginBtn { margin-top: 33vw; width: 100%; }
+}
