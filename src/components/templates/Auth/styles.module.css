@@ -50,7 +50,7 @@
    }
    .authFormArea {
       background-color: transparent;
-      height: 70vh;
+      height: 140vw;
       width: 100%;
       perspective: 100vh;
    }
