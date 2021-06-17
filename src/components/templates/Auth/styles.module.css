@@ -1,12 +1,12 @@
 .authTemplate {
    align-items: center;
-   height: 77vh;
    justify-content: center;
 }
 
 /* DESKTOP */
 @media(min-width: 768px) {
    .authTemplate {
+      height: 77vh;
       padding: 5vw;
    }
    .authFormArea {
@@ -46,6 +46,7 @@
 /* MOBILE */
 @media(max-width: 768px) {
    .authTemplate {
+      height: 144vw;
       padding: 11vw;
    }
    .authFormArea {
