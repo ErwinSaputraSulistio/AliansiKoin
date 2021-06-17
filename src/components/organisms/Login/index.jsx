@@ -22,7 +22,7 @@ export default function LoginOrganism() {
       .then((res) => { 
          localStorage.setItem("token", res.data.token)
          Swal.fire("Berhasil!", res.data.message, "success")
-         .then(() => { history.push("/home") })
+         .then(() => { history.push("/") })
       })
       .catch((err) => { 
          Swal.fire("Gagal?!", err.response.data.message, "error") 

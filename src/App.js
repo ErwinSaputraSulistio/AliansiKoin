@@ -10,9 +10,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/home" component={Home}/>
-        <Route path="/auth" component={Auth}/>
-        <Route path="/admin" component={Admin}/>
+        <Route exact path="/auth" component={Auth}/>
+        <Route exact path="/admin" component={Admin}/>
+        <Route exact path="/" component={Home}/>
         <Route component={NotFound}/>
       </Switch>
     </BrowserRouter>

@@ -29,7 +29,7 @@ export default function NotFound() {
                buttonBorder="0.1vw solid #3CB371" 
                buttonColor="white" 
                buttonName="Back to Home" 
-               clickFunction={ () => { history.push("/home") } } 
+               clickFunction={ () => { history.push("/") } } 
                customClass={"poppinsFont slideLeft " + css.notFoundBtn} 
                textColor="#3CB371"
             />

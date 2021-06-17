@@ -12,7 +12,7 @@ export default function Admin() {
    const [userList, setUserList] = useState([])
    const adminOnly = () => {
       Swal.fire("Eits?!", "Cuma admin yang boleh akses halaman ini yah ~", "warning") 
-      .then(() => { history.push("/home") })
+      .then(() => { history.push("/") })
    }
    useEffect(() => {
       document.title = "Aliansi Koin - Admin Page"
@@ -44,7 +44,7 @@ export default function Admin() {
                buttonBorder="0.1vw solid white" 
                buttonColor="indianred" 
                buttonName="Back to Home"
-               clickFunction={ () => { history.push("/home") } }
+               clickFunction={ () => { history.push("/") } }
                customClass={"poppinsFont showInAnimation " + css.adminBtn}
                textColor="white"
             />

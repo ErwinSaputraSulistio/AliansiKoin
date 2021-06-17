@@ -1,11 +1,11 @@
 .notFoundTemplate {
    align-items: center;
    height: 100vh;
-   justify-content: center;
 }
 
 /* DESKTOP */
 @media(min-width: 768px) {
+   .notFoundTemplate { justify-content: center; }
    .notFoundImg { width: 33%; }
    .notFoundBtnArea { 
       display: flex;
@@ -19,7 +19,7 @@
 
 /* MOBILE */
 @media(max-width: 768px) {
-   .notFoundTemplate { padding: 0 5vw; }
+   .notFoundTemplate { padding: 8.8vw; }
    .notFoundImg { width: 77%; }
    .notFoundBtnArea {
       align-items: center;
@@ -29,5 +29,5 @@
       justify-content: space-between;
       width: 100%;
    }
-   .notFoundBtn { width: 77%; }
+   .notFoundBtn { margin-top: 5.5vw; width: 77%; }
 }

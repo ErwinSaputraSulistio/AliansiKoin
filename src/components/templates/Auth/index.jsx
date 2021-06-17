@@ -12,7 +12,7 @@ export default function Auth() {
    const history = useHistory()
    const [authIs, switchAuthTo] = useState("Login")
    useEffect(() => { 
-      localStorage.getItem("token") !== null && Swal.fire("Hmm?!", "Anda sudah login, jika ingin ganti akun harap logout dulu!", "warning").then(() => { history.push("/home") })
+      localStorage.getItem("token") !== null && Swal.fire("Hmm?!", "Anda sudah login, jika ingin ganti akun harap logout dulu!", "warning").then(() => { history.push("/") })
       document.title = "Aliansi Koin" + (authIs === "Login" ? " - Login" : authIs === "Register" ? " - Register" : null)
    }, [authIs]);
    return(
